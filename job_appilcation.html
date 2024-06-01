@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles_job.css" />
+    <script
+      src="https://kit.fontawesome.com/873f13fe9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="form">
+        <h1>Job Application<i class="fas fa-solid fa-laptop-code"></i></h1>
+        <form action="POST" autocomplete="off">
+          <div class="application">
+            <span>
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" autofocus />
+            </span>
+            <span>
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" />
+            </span>
+            <span>
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+            </span>
+            <span>
+              <label for="job_role">Job Role</label>
+              <select id="job_role">
+                <option class="select">Select Job Role</option>
+                <option>Teaching Assisstant</option>
+                <option>Teaching Fellow</option>
+                <option>Intern</option>
+              </select>
+            </span>
+            <span class="stretch">
+              <label for="address">Address</label>
+              <textarea name="address" id="address" rows="5"></textarea>
+            </span>
+            <span>
+              <label for="city">City</label>
+              <input type="text" id="city" />
+            </span>
+            <span>
+              <label for="pincode">Pincode</label>
+              <input type="number" id="pincode" min="100000" max="222222" />
+            </span>
+            <span>
+              <label for="date">Start Date</label>
+              <input type="date" id="date" />
+            </span>
+            <span>
+              <label for="file">Upload Your CV</label>
+              <input type="file" id="file" />
+            </span>
+          </div>
+          <footer>
+            <button type="submit">Apply Now</button>
+            <button type="reset">Clear</button>
+          </footer>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
